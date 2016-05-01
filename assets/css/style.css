@@ -1,0 +1,35 @@
+.page-header{
+font-family: 'Lobster', cursive;
+text-align: center;
+background-image: url("../images/glitter.jpg");
+height:75px;
+color: white;
+margin-top:0;
+}
+
+button{
+	background-image: url("../images/glitter.jpg");
+	height: 60px;
+	font-family: 'Lobster', cursive;
+	
+}
+
+body{
+background-image:url("../images/peonie2.jpg");
+}
+
+.main{
+	margin:10px;
+	background-color: white;
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	font-size: 25px;
+}
+p{
+	color:pink;
+}
+
+
+.answers{
+background-color: white;
+}

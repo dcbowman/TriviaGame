@@ -8,17 +8,26 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+
     <!-- Bootstrap File -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">  
+
+    <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Lobster+Two' rel='stylesheet' type='text/css'> 
+
 </head>
 <div class="page-header">
-  <h1>Romatic Comedy Trivia Game</h1><small>Can you match up these classic quotes with the movie?</small>
+
+  <h1>Romatic Comedy Trivia Game</h1><large>Can you match up these classic quotes with the movie?</large>
 </div>
 <body>
 
+<div id="main-contianer" class="container">
+<section class="main section">
 <button type="button">You had me at "RomCom" Let's get started!</button>
 
-<container id=main>
+<div id="countdown"></div>
+
 <p class="question">1."I'll have what she's having."</p>        
 
 <ul class="answers">            
@@ -111,14 +120,18 @@
 </ul>        
 
 <br/>
-<button type="button">Results</button>
-</container>
+
+<button class="button">Results</button>
+</section>
+
+</div>
+<!-- Where results show-->
 <div id="results">
 	<h2>Your score</h2>
 <ul class="results">
 <li id="correct">Correct:</li>
 <li id="incorrect">Incorrect: </li>
-
+</ul>
 </div>
 
 </body>
