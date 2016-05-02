@@ -2,23 +2,25 @@
 font-family: 'Lobster', cursive;
 text-align: center;
 background-image: url("../images/glitter.jpg");
-height:75px;
+height:100px;
 color: white;
 margin-top:0;
 }
 
 button{
 	background-image: url("../images/glitter.jpg");
-	height: 60px;
+	height: 150px;
+	width: 250px;
 	font-family: 'Lobster', cursive;
-	
+	float:center;
 }
+
 
 body{
 background-image:url("../images/peonie2.jpg");
 }
 
-.main{
+.main-section{
 	margin:10px;
 	background-color: white;
 	text-align: center;
