@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RomCom Trivia Game</title>
-    <!--jQuery-->
-   <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>    
+    
    <!--Style sheets-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -15,9 +14,12 @@
 
     <!-- Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Lobster+Two' rel='stylesheet' type='text/css'> 
+  <!-- Jquery -->
+
 
 
 </head>
+
 <div class="page-header">
 
   <h1>Romatic Comedy Trivia Game</h1><h2>Can you match up these classic quotes with the movie?</h2>
@@ -28,7 +30,9 @@
 <section class="main-section">
 
 
-<div id="countdown"></div>
+<div id="timer">
+
+</div>
 
 <p class="question">1."I'll have what she's having."</p>        
 
@@ -79,7 +83,7 @@
 <p class="question">6. "Me? I'm scared of everything. I'm scared of what I saw, I'm scared of what I did, of who I am, and most of all I'm scared of walking out of this room and never feeling the rest of my whole life the way I feel when I'm with you."</p>        
 
 <ul class="answers">            
-<input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Answer 1</label><br/>            
+<input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Dirty Dancing</label><br/>            
 <input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Answer 2</label><br/>            
 <input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Answer 3</label><br/>            
 <input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Answer 4</label><br/>        
@@ -89,7 +93,7 @@
 
 <ul class="answers">            
 <input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Answer 1</label><br/>            
-<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Answer 2</label><br/>            
+<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">She's All That</label><br/>            
 <input type="radio" name="q7" value="c" id="q7c"><label for="q7c">Answer 3</label><br/>            
 <input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Answer 4</label><br/>        
 </ul>        
@@ -121,16 +125,17 @@
 <input type="radio" name="q10" value="d" id="q10d"><label for="q10d">How to Lose a Guy in 10 Days</label><br/>        
 </ul>        
 
-<br/>
 
-<a href="score.html">
-<button type="button">Results</button></a>
+
+<!--<a href="score.html"> -->
+<button type="button" id="results">Results</button></a>
 </section>
 
 </div>
-<!-- Where results show-->
-<
+
   <!--Javascript-->
+
+  <script type="text/javascript" src="assets/javascript/jquery-1.3.2.mn.js"</script>
 <script type="text/javascript" src="assets/javascript/app.js"</script>
 </body>
 

@@ -1,21 +1,104 @@
 //start game
+document.onLoad.()
+{
+var score = 0;
+var incorrect = 0;
+//clicking the result key will check for the correct answers
+$("results").click(function(results){
 
-//click button to start timer and reveal questions
+var correctAnswer1 = document.getElementById("q1d")
+	 if (correctAnswer1.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
 
-//set timer for 75 seconds
+var correctAnswer2 = document.getElementById("q2a")
+	 if (correctAnswer.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
 
-//time's up ends game and shows score page
+var correctAnswer3 = document.getElementById("q3a")
+	 if (correctAnswer3.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+
+var correctAnswer4 = document.getElementById("q4c")
+	 if (correctAnswer.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+var correctAnswer5 = document.getElementById("q5b")
+	 if (correctAnswer.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+
+var correctAnswer6 = document.getElementById("q6a")
+	 if (correctAnswer6.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+var correctAnswer7 = document.getElementById("q7b")
+	 if (correctAnswer.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+	
+var correctAnswer8 = document.getElementById("q8c")
+	 if (correctAnswer.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+	 var correctAnswer9 = document.getElementById("q9a")
+	 if (correctAnswer.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+var correctAnswer0 = document.getElementById("q10d")
+	 if (correctAnswer.checked === true){
+	 	score++;
+	 }
+	 else
+	 {
+	 	incorrect++;
+	 }
+}
 
 
-//put those into two categories
 
-var cat1 = ($("input[@name=q1]:checked").val() != "a");
 
-var cat2 = ($("input[@name=q2]:checked").val() != "b");
 
-//check if player selected the right category
 
-//if they selected the right one, increase the correct
 
-//else increase the incorrect
 
+
+}
