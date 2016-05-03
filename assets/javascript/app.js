@@ -1,10 +1,13 @@
 //start game
-document.onLoad.()
-{
-var score = 0;
-var incorrect = 0;
+$( document ).ready(function(results){
+console.log("ready");
+});
+
+
 //clicking the result key will check for the correct answers
 $("results").click(function(results){
+	var score = 0;
+var incorrect = 0;
 
 var correctAnswer1 = document.getElementById("q1d")
 	 if (correctAnswer1.checked === true){
@@ -91,7 +94,10 @@ var correctAnswer0 = document.getElementById("q10d")
 	 {
 	 	incorrect++;
 	 }
-}
+	 console.log(score);
+	 }); //ends results function
+
+//ends onload function
 
 
 
@@ -99,6 +105,3 @@ var correctAnswer0 = document.getElementById("q10d")
 
 
 
-
-
-}
