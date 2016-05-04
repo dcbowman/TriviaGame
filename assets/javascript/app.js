@@ -28,10 +28,12 @@ alert("It's time for some Rom Com trivia! Click OK to play! You have 2 minutes")
 
 //clicking the result key will check for the correct answers
 
+
+
+$("btnSubmit").click(function(){
+function results(){
 var score = 0;
 var incorrect = 0;
-
-function results(){
 
 var correctAnswer1 = document.getElementById("q1d")
 	 if (correctAnswer1.checked === true){
@@ -145,7 +147,8 @@ var correctAnswer0 = document.getElementById("q10d")
 
 	
 
-	}; //ends results function
+	};//ends results function
+	}); //ends onclick function
 document.getElementById("status").innerHTML = count;
 document.getElementById("correct").innerHTML = score;
 document.getElementById("incorrect").innerHTML = incorrect;
