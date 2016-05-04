@@ -1,12 +1,31 @@
 //start game
-$( document ).ready(function(results){
-console.log("ready");
-});
+$( document ).ready(function(countDown){ //starts the timer fuction
+//function countDown(sec,elem){
+	var count = 10;
+	var counter = setInterval(timer, 1000);
+	//$("status").html("Time left"+ "+sec" +"seconds");
+ function timer(){
+ 	count--;
+	if(count < 1){
+		clearInterval(counter);
+		//$("status").html = "<h2>Time's up </h>";
+		//$("status").html = '<a href="score.html">"Check your score!"</a>';
+	alert("Oop. Time, she's up.");
+	}
+	//sec--;
+	//var timer = setTimeout(countDown('+sec+', '+elem+', 1000));
+
+//countDown(120, "status");
+
+document.getElementById("status").innerHTML = count;
+};
+
+
 
 
 //clicking the result key will check for the correct answers
 $("results").click(function(results){
-	var score = 0;
+var score = 0;
 var incorrect = 0;
 
 var correctAnswer1 = document.getElementById("q1d")
@@ -94,9 +113,10 @@ var correctAnswer0 = document.getElementById("q10d")
 	 {
 	 	incorrect++;
 	 }
-	 console.log(score);
-	 }); //ends results function
+	
 
+	 }); //ends results function
+});
 //ends onload function
 
 
