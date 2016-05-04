@@ -1,121 +1,156 @@
 //start game
-$( document ).ready(function(countDown){ //starts the timer fuction
-//function countDown(sec,elem){
-	var count = 10;
+$("index.html").ready(function(){ 
+alert("It's time for some Rom Com trivia! Click OK to play! You have 2 minutes");
+
+
+//starts the timer fuction
+
+	var count = 120;
 	var counter = setInterval(timer, 1000);
-	//$("status").html("Time left"+ "+sec" +"seconds");
+	
+	
  function timer(){
  	count--;
 	if(count < 1){
 		clearInterval(counter);
-		//$("status").html = "<h2>Time's up </h>";
-		//$("status").html = '<a href="score.html">"Check your score!"</a>';
+		
 	alert("Oop. Time, she's up.");
-	}
-	//sec--;
-	//var timer = setTimeout(countDown('+sec+', '+elem+', 1000));
 
-//countDown(120, "status");
+	window.location.replace("score.html");
+}
+//$("score.html").ready(function(results){
 
-document.getElementById("status").innerHTML = count;
-};
+	
+//document.getElementById("status").innerHTML = count;
 
-
+//};
 
 
 //clicking the result key will check for the correct answers
-$("results").click(function(results){
+
 var score = 0;
 var incorrect = 0;
+
+function results(){
 
 var correctAnswer1 = document.getElementById("q1d")
 	 if (correctAnswer1.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 
 var correctAnswer2 = document.getElementById("q2a")
-	 if (correctAnswer.checked === true){
+	 if (correctAnswer2.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
+
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 
 var correctAnswer3 = document.getElementById("q3a")
 	 if (correctAnswer3.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 
 var correctAnswer4 = document.getElementById("q4c")
 	 if (correctAnswer.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 var correctAnswer5 = document.getElementById("q5b")
-	 if (correctAnswer.checked === true){
+	 if (correctAnswer5.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 
 var correctAnswer6 = document.getElementById("q6a")
 	 if (correctAnswer6.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
+	 
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 var correctAnswer7 = document.getElementById("q7b")
-	 if (correctAnswer.checked === true){
+	 if (correctAnswer7.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
+	 	$("#incorrect").html(incorrect);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 	
 var correctAnswer8 = document.getElementById("q8c")
-	 if (correctAnswer.checked === true){
+	 if (correctAnswer.checked8 === true){
 	 	score++;
+	 	$("#correct").html(score);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 	 var correctAnswer9 = document.getElementById("q9a")
-	 if (correctAnswer.checked === true){
+	 if (correctAnswer9.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
+	 	$("#incorrect").html(incorrect);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
 var correctAnswer0 = document.getElementById("q10d")
-	 if (correctAnswer.checked === true){
+	 if (correctAnswer0.checked === true){
 	 	score++;
+	 	$("#correct").html(score);
 	 }
 	 else
 	 {
 	 	incorrect++;
+	 	$("#incorrect").html(incorrect);
 	 }
+
 	
 
-	 }); //ends results function
+	}; //ends results function
+document.getElementById("status").innerHTML = count;
+document.getElementById("correct").innerHTML = score;
+document.getElementById("incorrect").innerHTML = incorrect;
+};
+
 });
 //ends onload function
 
