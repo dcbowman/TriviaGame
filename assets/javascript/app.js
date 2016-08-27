@@ -153,9 +153,14 @@ var correctAnswer0 = document.getElementById("q10d")
 document.getElementById("status").innerHTML = count;
 document.getElementById("correct").innerHTML = score;
 document.getElementById("incorrect").innerHTML = incorrect;
-};
 
+     
+
+
+     
+ });
 });
+
 //ends onload function
 
 
